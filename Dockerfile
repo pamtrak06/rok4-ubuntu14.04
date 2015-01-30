@@ -27,14 +27,14 @@ RUN apt-get install -y liblog-log4perl-perl libconfig-inifiles-perl libxml-libxm
 RUN apt-get install -y doxygen graphviz naturaldocs
 
 # install cmake
-RUN apt-get instal cmake 
+RUN apt-get install -y cmake 
 
 # download and install rok4 latest sources
 RUN wget http://www.rok4.org/data/src/rok4-src.zip
 RUN unzip rok4-src.zip
 
 # rok4 compilation
-RUN mkdir build; cd build; cmake .. -DCMAKE_INSTALL_PREFIX=/opt/rok4 \
+RUN mkdir build; cd build; cmake .. -DCMAKE_INSTALL_PREFIX=/opt/rok4; \
 	make; \
 	make doc; \
 	make install
