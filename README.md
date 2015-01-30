@@ -22,14 +22,6 @@ Run container
 $ docker run -it -p 80:80 -p 22:22 pamtrak06/rok4-ubuntu14.04
 ```
 
-## Test services
-
-WMS service is available from this url :
-http://{docker ip}/fcgid/rok4?request=GetCapabilities&service=WMS
-
-WMTS service is available from this url :
-http://{docker ip}/fcgid/rok4?request=GetCapabilities&service=WMTS
-
 Exit container without stop it
 ```
 CTRL+P  &  CTRL+Q
@@ -48,6 +40,14 @@ $ boot2Docker ip => 192.168.59.103
 ## Configure rok4 server
 
 See http://www.rok4.org/documentation
+
+## Test services
+
+WMS service is available from this url :
+http://{docker ip}/fcgid/rok4?request=GetCapabilities&service=WMS
+
+WMTS service is available from this url :
+http://{docker ip}/fcgid/rok4?request=GetCapabilities&service=WMTS
 
 ## Licence
 
