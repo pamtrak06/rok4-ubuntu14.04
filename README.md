@@ -39,7 +39,22 @@ $ boot2Docker ip => 192.168.59.103
 
 # Configure rok4 server
 
-See http://www.rok4.org/documentation
+VirtualHost configuration
+
+In the VirtualHost Apache2 configuration add the followings lines
+```
+ScriptAlias /fcgid/ /opt/rok4/bin/
+
+<Directory "/opt/rok4/bin/">
+SetHandler fcgid-script
+Options +ExecCGI
+AllowOverride None
+Order allow,deny
+Allow from all
+</Directory>
+```
+
+For more information, see http://www.rok4.org/documentation
 
 # Test services
 
