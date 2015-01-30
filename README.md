@@ -43,3 +43,5 @@ $ boot2Docker ip => 192.168.59.103
 ```
 
 ## Configure rok4 server
+
+See http://www.rok4.org/documentation
