@@ -21,6 +21,11 @@ Run container
 ```
 $ docker run -it -p 80:80 -p 22:22 pamtrak06/rok4-ubuntu14.04
 ```
+Enter in the container
+```
+docker ps
+docker exec -it <container id or name> /bin/bash
+```
 
 Exit container without stop it
 ```
