@@ -34,7 +34,8 @@ RUN wget http://www.rok4.org/data/src/rok4-src.zip
 RUN unzip rok4-src.zip
 
 # rok4 compilation
-RUN mkdir build; cd build; cmake .. -DCMAKE_INSTALL_PREFIX=/opt/rok4; \
+RUN mkdir build; cd build; \
+	cmake .. -DCMAKE_INSTALL_PREFIX=/opt/rok4; \
 	make; \
 	make doc; \
 	make install
