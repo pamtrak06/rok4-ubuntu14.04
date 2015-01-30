@@ -40,3 +40,7 @@ $ boot2Docker ip => 192.168.59.103
 ## Configure rok4 server
 
 See http://www.rok4.org/documentation
+
+## Licence rok4
+
+http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
