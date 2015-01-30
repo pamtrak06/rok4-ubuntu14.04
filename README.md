@@ -12,7 +12,7 @@
 
 This image is built under ubuntu 14.04.
 ```
-docker build -t pamtrak06/rok4-ubuntu14.04:latest https://raw.githubusercontent.com/pamtrak06/rok4-ubuntu14.04/master/Dockerfile
+docker build -t pamtrak06/rok4-ubuntu14.04 https://raw.githubusercontent.com/pamtrak06/rok4-ubuntu14.04/master/Dockerfile
 ```
 
 ## Run rok4 docker container
