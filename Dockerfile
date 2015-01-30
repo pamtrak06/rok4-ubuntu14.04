@@ -31,7 +31,7 @@ RUN apt-get install -y cmake
 
 # download and install rok4 latest sources
 RUN wget http://www.rok4.org/data/src/rok4-src.zip
-RUN unzip rok4-src.zip
+RUN unzip rok4-src.zip; cd rok4-*
 
 # rok4 compilation
 RUN mkdir build; cd build; \
