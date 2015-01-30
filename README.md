@@ -17,11 +17,6 @@ docker build -t pamtrak06/rok4-ubuntu14.04 https://raw.githubusercontent.com/pam
 
 ## Run rok4 docker container
 
-Boot docker
-```
-$ boot2docker start
-```
-
 Run container
 ```
 $ docker run -it -p 80:80 -p 22:22 pamtrak06/rok4-ubuntu14.04
