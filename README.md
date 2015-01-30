@@ -19,22 +19,18 @@ docker build -t pamtrak06/rok4-ubuntu14.04 https://raw.githubusercontent.com/pam
 
 Run container
 ```
-$ docker run -it -p 80:80 -p 22:22 pamtrak06/rok4-ubuntu14.04
+$ docker run -d -p 80:80 -p 22:22 pamtrak06/rok4-ubuntu14.04
 ```
-Enter in the container
+
+Open a terminal session on a running container
 ```
-docker ps
-docker exec -it <container id or name> /bin/bash
+$ docker ps
+$ docker exec -i -t pamtrak06/rok4-ubuntu14.04 /bin/bash
 ```
 
 Exit container without stop it
 ```
 CTRL+P  &  CTRL+Q
-```
-
-Open a terminal session on a running container
-```
-$ docker exec -i -t pamtrak06/rok4-ubuntu14.04 /bin/bash
 ```
 
 Get docker vm ip : 
