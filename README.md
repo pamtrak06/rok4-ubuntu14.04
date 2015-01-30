@@ -41,7 +41,7 @@ $ boot2Docker ip => 192.168.59.103
 
 VirtualHost configuration
 
-In the VirtualHost Apache2 configuration add the followings lines ([helpful link](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts))
+In the VirtualHost Apache2 configuration, add the followings lines ([helpful link](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts))
 ```
 ScriptAlias /fcgid/ /opt/rok4/bin/
 
@@ -54,7 +54,7 @@ Allow from all
 </Directory>
 ```
 
-For more information, see http://www.rok4.org/documentation
+For more information about configuration, see http://www.rok4.org/documentation
 
 # Test services
 
