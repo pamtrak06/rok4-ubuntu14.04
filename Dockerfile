@@ -31,17 +31,24 @@ RUN apt-get install -y cmake
 
 # download and install rok4 latest sources
 RUN wget http://www.rok4.org/data/src/rok4-src.zip
-RUN unzip rok4-src.zip; cd rok4-*
+RUN unzip rok4-src.zip
 
 # rok4 compilation
-RUN mkdir build; cd build; \
+RUN cd rok4-*; mkdir build; cd build; \
 	cmake .. -DCMAKE_INSTALL_PREFIX=/opt/rok4; \
 	make; \
 	make doc; \
 	make install
 
-EXPOSE 22, 80 
+# install apache2 with Mod_fcgid enabled
+RUN apt-get install -y apache2 libapache2-mod-fcgid
+RUN a2enmod fcgid
 
-CMD [/opt/rok4/bin/rok4]
+
+EXPOSE 22
+EXPOSE 80
+
+# run apache (rok4 start : /opt/rok4/bin/rok4)
+CMD [apache2ctl start]
 
 
