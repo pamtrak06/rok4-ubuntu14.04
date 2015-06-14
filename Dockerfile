@@ -30,8 +30,8 @@ RUN apt-get install -y doxygen graphviz naturaldocs
 RUN apt-get install -y cmake 
 
 # download and install rok4 latest sources
-RUN wget http://www.rok4.org/data/src/rok4-src.zip
-RUN unzip rok4-src.zip
+RUN wget http://www.rok4.org/data/src/rok4-0.19.0-src.zip
+RUN unzip rok4-0.19.0-src.zip
 
 # rok4 compilation
 RUN cd rok4-*; mkdir build; cd build; \
