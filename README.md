@@ -68,3 +68,9 @@ http://{docker ip}/fcgid/rok4?request=GetCapabilities&service=WMTS
 # Licence
 
 http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
+
+## Docker utility
+
+For easy use of docker command, try [edocker](https://github.com/pamtrak06/edocker).
+Create your edocker.cfg configuration file (parameters for most used docker commands ) and then use edocker<command> in any docker working project container those configuration file !
+
